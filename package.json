@@ -4,9 +4,9 @@
   "homepage": "http://MikePortnoy1985.github.io/ip-address-tracker",
   "scripts": {
     "dev": "vite",
-    "predeploy": "vite build",
+    "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^1.0.7",
