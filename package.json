@@ -6,7 +6,7 @@
     "dev": "vite",
     "predeploy": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^1.0.7",
