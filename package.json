@@ -1,7 +1,7 @@
 {
   "name": "ip-address-tracker",
   "version": "0.0.0",
-  "homepage": "http://MikePortnoy1985.github.io/ip-address-tracker",
+  "homepage": "https://MikePortnoy1985.github.io/ip-address-tracker",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
