@@ -1,12 +1,12 @@
 {
   "name": "ip-address-tracker",
   "version": "0.0.0",
-  “homepage”: “http://MikePortnoy1985.github.io/ip-address-tracker",
+  "homepage": "http://MikePortnoy1985.github.io/ip-address-tracker",
   "scripts": {
     "dev": "vite",
     "predeploy": "vite build",
     "preview": "vite preview",
-    “deploy”: “gh-pages -d build”
+    "deploy": "gh-pages -d build",
   },
   "dependencies": {
     "@vitejs/plugin-react": "^1.0.7",
