@@ -9,6 +9,7 @@ const aliases = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: `https://mikeportnoy1985.github.io/ip-address-tracker/dist/`,
   plugins: [react()],
   resolve: {
     alias: aliases,
