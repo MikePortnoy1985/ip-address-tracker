@@ -1,0 +1,115 @@
+@import 'css/variables.css';
+
+.panel {
+  position: absolute;
+  left: 10%;
+  z-index: 3000;
+  display: flex;
+  width: 80%;
+  min-height: 10rem;
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+  box-shadow: 0 50px 50px -25px rgba(0, 0, 0, 0.0983665);
+  transform: translate(0, -5rem);
+
+  @media (max-width: 775px) {
+    left: 25%;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: min-content;
+  }
+
+  @media (max-width: 500px) {
+    left: 10%;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: min-content;
+  }
+}
+
+.panel-card {
+  position: relative;
+  width: 25%;
+  min-width: 10rem;
+  height: 100%;
+  padding: 2.5rem 2rem 0;
+
+  @media (max-width: 775px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem 0;
+  }
+
+  &__title {
+    padding-bottom: 0.75rem;
+    color: var(--clr-dark);
+    font-weight: var(--font-bold);
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+    opacity: 0.5;
+
+    &:empty {
+      @mixin skeleton;
+
+      width: 60%;
+      height: 0.75rem;
+      background-color: var(--clr-gray);
+      border-radius: 4px;
+    }
+
+    @media (max-width: 775px) {
+      font-size: 0.625rem;
+      line-height: 0.75rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  &__info {
+    padding-bottom: 1.5rem;
+    overflow: hidden;
+    color: var(--clr-dark);
+    font-weight: var(--font-semibold);
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+    letter-spacing: -0.015rem;
+    text-overflow: ellipsis;
+
+    &:empty {
+      @mixin skeleton;
+
+      width: 80%;
+      height: 3.5rem;
+      margin-top: 0.75rem;
+      background-color: var(--clr-gray);
+      border-radius: 4px;
+      opacity: 0.5;
+    }
+
+    @media (max-width: 775px) {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      letter-spacing: -0.01rem;
+    }
+  }
+
+  &:not(:last-child)::after {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 3.75rem;
+    border: 1px solid var(--clr-black);
+    opacity: 0.15;
+    content: '';
+
+    @media (max-width: 775px) {
+      display: none;
+    }
+  }
+}

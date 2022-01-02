@@ -1,0 +1,56 @@
+@import 'css/variables.css';
+
+.input {
+  @mixin flex-center;
+
+  width: 40%;
+  min-width: 16rem;
+  height: 3.625rem;
+
+  &-field {
+    width: 100%;
+    height: 100%;
+    padding: 1.125rem 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    border: 0;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    &:active,
+    &:hover,
+    &:focus {
+      outline: 0;
+      outline-offset: 0;
+    }
+
+    &_invalid {
+      border: 3px solid red;
+    }
+  }
+
+  &-button {
+    height: 100%;
+    padding: 0 1.8125rem;
+    background: url('src/assets/icon-arrow.svg') no-repeat;
+    background-color: var(--clr-dark);
+    background-position: center;
+    border: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: ease-in-out background-color 0.4s;
+
+    &:hover {
+      background-color: var(--clr-darkgray);
+    }
+
+    &:active {
+      margin-top: 2px;
+    }
+
+    &:disabled {
+      margin-top: 0;
+      background-color: var(--clr-gray);
+    }
+  }
+}
