@@ -1,6 +1,6 @@
 # ip-address-tracker
 
-Responsive app built with React, CSS Flex-box and Leaflet.
+Responsive app built with React, PostCss and Leaflet.
 
 API [https://geo.ipify.org](https://geo.ipify.org/)
 
